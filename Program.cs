@@ -41,10 +41,10 @@ int SuitableElemsCount(string[] textArray) // Подсчет кол-ва эле�
     return count;
 }
 
-string[] NewThreeDigitsElementsArray(string[] textArray, int count) // Создание нового массива из подходящих элементов.
+string[] NewThreeDigitsElementsArray(string[] textArray, int arraySize) // Создание нового массива из подходящих элементов.
 {
+    string[] newArray = new string[arraySize];
     int temp = 0;
-    string[] newArray = new string[count];
     for (int i = 0; i < textArray.Length; i++)
     {
         if (textArray[i].Length <= 3)
